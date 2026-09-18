@@ -8,7 +8,9 @@ LINE アプリ内の制約で `sms:` スキームが正しく起動しない問�
 
 ## 使い方
 
-以下の形式で URL を作成し、LINE 等で送信します。
+以下の形式で URL を作成し、LINE 等で送信します。（+81XXXXXXXXXXの箇所には遷移させたいユーザーの電話番号）
+
+https://yuki-dev26.github.io/rcs-link/?tel=+81XXXXXXXXXX&openExternalBrowser=1
 
 ```text
 [https://yuki-dev26.github.io/rcs-link/?tel=+81XXXXXXXXXX&openExternalBrowser=1](https://yuki-dev26.github.io/rcs-link/?tel=+81XXXXXXXXXX&openExternalBrowser=1)
