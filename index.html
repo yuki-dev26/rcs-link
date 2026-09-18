@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メッセージを開く</title>
+  <script>
+    window.onload = function() {
+      const params = new URLSearchParams(window.location.search);
+      const tel = params.get('tel');
+      if (tel) {
+        window.location.href = `sms:${tel}`;
+      }
+    };
+  </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+  <p>メッセージアプリを開いています...</p>
+  <p>自動で開かない場合は以下をタップしてください：</p>
+  <p id="fallback"></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const tel = params.get('tel');
+    if (tel) {
+      document.getElementById('fallback').innerHTML = 
+        `<a href="sms:${tel}" style="font-size: 18px; font-weight: bold; color: #007bff;">メッセージアプリを開く</a>`;
+    }
+  </script>
+</body>
+</html>
