@@ -17,5 +17,5 @@ sms://+81XXXXXXXXXX
 以下の形式で URL を作成し、LINE 等で送信します。（+81XXXXXXXXXXの箇所には遷移させたいユーザーの電話番号）
 
 ```text
-https://yuki-dev26.github.io/rcs-link/?tel=+81XXXXXXXXXX&openExternalBrowser=1
+https://rcs-link.yukip02.com/?tel=+81XXXXXXXXXX&openExternalBrowser=1
 ```
